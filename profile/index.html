@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhishek - Developer portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'popins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(18, 18, 62);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+
+            color: rgb(152, 152, 241);
+            font-size: 1.04rem;
+        }
+
+        main hr {
+            border: 0;
+            background-color: #9c97f1;
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+
+            
+        }
+        .left:hover {              
+            font-size: 1.7rem; 
+        }
+
+        .firstsection {            
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 120px 0;
+
+
+
+        }
+
+        .firstsection>div {
+            width: 30%;
+
+        }
+
+        .leftsection {
+
+            width: 34px;
+            font-size: 3rem;
+
+
+        }
+        .leftsection .buttons{
+            padding: 50px 0;
+        }
+        .leftsection .btn {
+            padding: 12px;
+            background: #1e2167;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 10px;
+            cursor: pointer;
+            text-decoration: none; 
+
+        }
+
+        .rightsection img {
+            width: 110%;
+        }
+
+        .purple {
+            color: rgb(140, 72, 203)
+        }
+
+        #element {
+            color: rgb(170, 107, 228);
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+            height: 50vh;
+        }
+
+        .secondsection h1 {
+            font-size: 1.8rem;
+            margin: -30px -60px;
+        }
+
+        footer {
+            background-color: rgb(7, 0, 7);
+            align-items: start;
+
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul {
+            list-style: none;
+            line-height: 25px;
+            cursor: pointer;
+
+        }
+
+        .footer>div {
+            width: 223px;
+            ;
+        }
+        footer .footer-rights{
+           text-align: center;
+          color: gray;
+          padding: 12px 0;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Abhishek portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">projects</a></li>
+                    <li><a href="/">Contact me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">Hi, My name is <span class="purple">Abhishek singh</span>
+                <div>and i am a passionate <br>
+                    <span id="element"></span>
+                    <div class="buttons">
+                        <a href="" class="btn">Download Resume</a>
+                      
+                        <a href="https://github.com/Abhisheekk0" class="btn" target="_blank " rel="noopener noreferrer" >visit Github</a>
+                    </div>
+                </div>
+            </div>
+            <div class="rightsection"><img src="png3.png" alt=""></div>
+        </section>
+        <hr>
+        <section class="secondsection">
+
+            <h1>Work Experience</h1>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Abhishek Developer portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>Home</li>
+                    <li>contact</li>
+                    <li>About</li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <!-- <li>Home</li>
+                    <li>contact</li>
+                    <li>About</li> -->
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                    <li>LinkedIn</li>
+                    <li>Github</li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="footer-rights">
+           copyrights &#169 www.abhishekportfolio.com | All right reserved
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['<i>Web Developer</i> ', '<i> Video Editor</i>', '<i>Web Designer</i>'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
